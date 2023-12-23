@@ -1,5 +1,5 @@
 
-import env from '@configs/env';
+// import env from '@configs/env';
 import { getSES } from './aws.config';
 import { SendEmailCommand } from '@aws-sdk/client-ses';
 const ses = getSES();
@@ -29,7 +29,7 @@ export const sendEmail = async (to, subject,message, html) => {
 				Data: subject,
 			},
 		},
-		Source:env.FROM_EMAIL,
+		Source:process.env.FROM_EMAIL,
 
 	};
 	try {
