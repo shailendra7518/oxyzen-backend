@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "D:\\Oxizen\\oxyzen-backend\\src\\logs\\debug\\.f983ba2847e06989bb1e6fb434144e381b7c57a9-audit.json",
+    "files": [
+        {
+            "date": 1703364231428,
+            "name": "D:\\Oxizen\\oxyzen-backend\\src\\logs\\debug\\2023-12-24.log",
+            "hash": "01449717553c522ed3cf5b4c3f2e0591ac30c3c67d87695e11a47c58befeb293"
+        }
+    ],
+    "hashType": "sha256"
+}
