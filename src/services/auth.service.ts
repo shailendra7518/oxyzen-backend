@@ -50,8 +50,8 @@ class UserService {
 
 				await this.userModel.update(
 					{
-						resetToken: resetToken,
-						resetTokenExpiration: resetTokenExpiration,
+						reset_token: resetToken,
+						reset_token_expiration: resetTokenExpiration,
 					},
 					{ where: { email: email } },
 				);
@@ -73,11 +73,11 @@ class UserService {
 		try {
 			const user = await this.userModel.findOne({
 				where: {
-					resetToken: resetToken,
+					reset_token: resetToken,
 				},
 			});
-			const date = new Date(user.dataValues.resetTokenExpiration);
-			console.log(user.dataValues.resetTokenExpiration);
+			const date = new Date(user.dataValues.reset_token_expiration);
+			console.log(user.dataValues.reset_token_expiration);
 			const miliseconds = date.getTime();
 			console.log(miliseconds);
 			console.log(Date.now());
@@ -87,7 +87,7 @@ class UserService {
 				if (miliseconds >= Date.now()) {
 					await this.userModel.update(
 						{ password: newPassword },
-						{ where: { resetToken: resetToken } },
+						{ where: { reset_token: resetToken } },
 					);
 				} else {
 					throw new Error("expired reset token ");
