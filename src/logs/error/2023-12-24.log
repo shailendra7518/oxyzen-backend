@@ -1,0 +1,88 @@
+2023-12-24 02:58:42 error: uncaughtException: Cannot find module '@configs/env'
+Require stack:
+- D:\Oxizen\oxyzen-backend\src\controllers\auth.controller.ts
+- D:\Oxizen\oxyzen-backend\src\routes\user.route.ts
+- D:\Oxizen\oxyzen-backend\src\routes\index.routes.ts
+- D:\Oxizen\oxyzen-backend\src\server.ts
+Error: Cannot find module '@configs/env'
+Require stack:
+- D:\Oxizen\oxyzen-backend\src\controllers\auth.controller.ts
+- D:\Oxizen\oxyzen-backend\src\routes\user.route.ts
+- D:\Oxizen\oxyzen-backend\src\routes\index.routes.ts
+- D:\Oxizen\oxyzen-backend\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (D:\Oxizen\oxyzen-backend\node_modules\.pnpm\@cspotcode+source-map-support@0.8.1\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (D:\Oxizen\oxyzen-backend\node_modules\.pnpm\tsconfig-paths@4.2.0\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Oxizen\oxyzen-backend\src\controllers\auth.controller.ts:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module.m._compile (D:\Oxizen\oxyzen-backend\node_modules\.pnpm\ts-node@10.9.1_@types+node@20.3.0_typescript@5.1.3\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+2023-12-24 02:58:55 error: uncaughtException: Cannot find module '@configs/env'
+Require stack:
+- D:\Oxizen\oxyzen-backend\src\controllers\auth.controller.ts
+- D:\Oxizen\oxyzen-backend\src\routes\user.route.ts
+- D:\Oxizen\oxyzen-backend\src\routes\index.routes.ts
+- D:\Oxizen\oxyzen-backend\src\server.ts
+Error: Cannot find module '@configs/env'
+Require stack:
+- D:\Oxizen\oxyzen-backend\src\controllers\auth.controller.ts
+- D:\Oxizen\oxyzen-backend\src\routes\user.route.ts
+- D:\Oxizen\oxyzen-backend\src\routes\index.routes.ts
+- D:\Oxizen\oxyzen-backend\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (D:\Oxizen\oxyzen-backend\node_modules\.pnpm\@cspotcode+source-map-support@0.8.1\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (D:\Oxizen\oxyzen-backend\node_modules\.pnpm\tsconfig-paths@4.2.0\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Oxizen\oxyzen-backend\src\controllers\auth.controller.ts:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module.m._compile (D:\Oxizen\oxyzen-backend\node_modules\.pnpm\ts-node@10.9.1_@types+node@20.3.0_typescript@5.1.3\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+2023-12-24 02:59:05 error: uncaughtException: Cannot find module '@configs/env'
+Require stack:
+- D:\Oxizen\oxyzen-backend\src\controllers\auth.controller.ts
+- D:\Oxizen\oxyzen-backend\src\routes\user.route.ts
+- D:\Oxizen\oxyzen-backend\src\routes\index.routes.ts
+- D:\Oxizen\oxyzen-backend\src\server.ts
+Error: Cannot find module '@configs/env'
+Require stack:
+- D:\Oxizen\oxyzen-backend\src\controllers\auth.controller.ts
+- D:\Oxizen\oxyzen-backend\src\routes\user.route.ts
+- D:\Oxizen\oxyzen-backend\src\routes\index.routes.ts
+- D:\Oxizen\oxyzen-backend\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (D:\Oxizen\oxyzen-backend\node_modules\.pnpm\@cspotcode+source-map-support@0.8.1\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (D:\Oxizen\oxyzen-backend\node_modules\.pnpm\tsconfig-paths@4.2.0\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Oxizen\oxyzen-backend\src\controllers\auth.controller.ts:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module.m._compile (D:\Oxizen\oxyzen-backend\node_modules\.pnpm\ts-node@10.9.1_@types+node@20.3.0_typescript@5.1.3\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+2023-12-24 02:59:20 error: uncaughtException: Cannot find module '@configs/env'
+Require stack:
+- D:\Oxizen\oxyzen-backend\src\controllers\auth.controller.ts
+- D:\Oxizen\oxyzen-backend\src\routes\user.route.ts
+- D:\Oxizen\oxyzen-backend\src\routes\index.routes.ts
+- D:\Oxizen\oxyzen-backend\src\server.ts
+Error: Cannot find module '@configs/env'
+Require stack:
+- D:\Oxizen\oxyzen-backend\src\controllers\auth.controller.ts
+- D:\Oxizen\oxyzen-backend\src\routes\user.route.ts
+- D:\Oxizen\oxyzen-backend\src\routes\index.routes.ts
+- D:\Oxizen\oxyzen-backend\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (D:\Oxizen\oxyzen-backend\node_modules\.pnpm\@cspotcode+source-map-support@0.8.1\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (D:\Oxizen\oxyzen-backend\node_modules\.pnpm\tsconfig-paths@4.2.0\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Oxizen\oxyzen-backend\src\controllers\auth.controller.ts:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module.m._compile (D:\Oxizen\oxyzen-backend\node_modules\.pnpm\ts-node@10.9.1_@types+node@20.3.0_typescript@5.1.3\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)

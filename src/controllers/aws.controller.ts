@@ -1,8 +1,10 @@
-import env from "@configs/env";
+
 import { CustomRequest } from "@interfaces/CustomRequest";
 import GetPresignedUrl from "@services/AWS/aws.constants";
 import { getContentType } from "@utils/getContentType";
 import { Response } from "express"
+import dotenv from "dotenv";
+dotenv.config();
 
 class awsController {
 
@@ -17,7 +19,7 @@ class awsController {
 			const objectKey = `alumni/${type}/${Date.now()}.${fileExtension}`;
 
 			const presignedUrl = await this.getPreSignedUrl.getPresignedUrlToUpload(objectKey, contentType);
-			presignedUrl["fileUrl"] = `https://${env.AWS_BUCKET_NAME}.s3.${env.AWS_REGION}.amazonaws.com/${objectKey}`;
+			presignedUrl["fileUrl"] = `https://${process.env.AWS_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/${objectKey}`;
 			res.status(200).json(presignedUrl);
 		} catch (error) {
 			console.error('Error initiating file upload:', error);
@@ -34,7 +36,7 @@ class awsController {
 				const contentType = getContentType(fileExtension);
 				const objectKey = `alumni/${type}/${Date.now()}.${fileExtension}`;
 				const presignedUrl = await this.getPreSignedUrl.getPresignedUrlToUpload(objectKey, contentType);
-				presignedUrl["fileUrl"] = `https://${env.AWS_BUCKET_NAME}.s3.${env.AWS_REGION}.amazonaws.com/${objectKey}`;
+				presignedUrl["fileUrl"] = `https://${process.env.AWS_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/${objectKey}`;
 				presignedUrl["s3AccessKey"] = objectKey;
 				return presignedUrl;
 			}));

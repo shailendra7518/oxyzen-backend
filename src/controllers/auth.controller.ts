@@ -1,9 +1,10 @@
 // Import environment configuration
-import env from "@configs/env";
+// import env from "@configs/env";
 import { NextFunction, Request, Response } from "express";
 import passport from "passport";
 import "@configs/passport";
-
+import dotenv from "dotenv";
+dotenv.config();
 // Controller handling authentication-related actions
 class AuthController {
 	// Handle user registration
@@ -74,8 +75,8 @@ class AuthController {
 	public logout = async (req: Request, res: Response, next: NextFunction) => {
 		req.logout(function (err) {
 			if (err) return next(err);
-			res.status(200).clearCookie(env.AUTH_COOKIE_NAME, {
-				domain: env.COOKIE_DOMAIN,
+			res.status(200).clearCookie(process.env.AUTH_COOKIE_NAME, {
+				domain: process.env.COOKIE_DOMAIN,
 			});
 			req.session.destroy(function (err) {
 				if (err) return next(err);
