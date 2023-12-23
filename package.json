@@ -2,16 +2,10 @@
 	"name": "gpt-central-backend",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "server.ts",
 	"scripts": {
-		"test": "jest",
-		"dev": "set NODE_ENV=development&&nodemon",
-		"build": "swc src -d dist --source-maps --copy-files",
-		"lint": "prettier --check src/**/*.ts && eslint --ext .ts src",
-		"lint:fix": "prettier --write src/**/*.ts && eslint --ext .ts src --fix",
-		"deploy:test": "pnpm build && pm2 start ecosystem.config.js --env test",
-		"deploy:prod": "pnpm build && pm2 start ecosystem.config.js --env production",
-		"deploy:staging": "pnpm build && pm2 start ecosystem.config.js --env staging"
+		"start": "node server.ts",
+		"dev": "nodemon server.ts"
 	},
 	"keywords": [],
 	"author": "",
