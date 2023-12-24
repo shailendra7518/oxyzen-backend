@@ -6,9 +6,9 @@ import {
 	loginStart,
 	loginError,
 	loginSuccess,
-	logoutStart,
+	// logoutStart,
 	logoutSuccess,
-	logoutError,
+	// logoutError,
 } from "./auth.slice";
 import { UserData } from "./auth.types";
 import {toast } from "react-toastify";
@@ -25,7 +25,7 @@ const userRegister = createAsyncThunk(
 		try {
 			dispatch(registerStart());
 			const response = await fetch(
-				"http://localhost:8080/api/v1/auth/register",
+				"http://localhost:8080/api/oxyzen/auth/signup",
 				{
 					method: "POST",
 					headers: {
@@ -36,6 +36,7 @@ const userRegister = createAsyncThunk(
 			);
 
 			const data: AuthResponse = await response.json();
+			console.log(data,"--------")
 			toast.success(data.message);
 			dispatch(registerSuccess(data.user));
 		} catch (err) {
@@ -50,7 +51,7 @@ const userLogin = createAsyncThunk(
 		try {
 			dispatch(loginStart());
 			const response = await fetch(
-				"http://localhost:8080/api/v1/auth/login",
+				"http://localhost:8080/api/oxyzen/auth/signin",
 				{
 					method: "POST",
 					headers: {
@@ -72,18 +73,20 @@ const userLogin = createAsyncThunk(
 const userLogout = createAsyncThunk(
 	"auth/logout",
 	async (_, { dispatch }) => {
-		try {
-			dispatch(logoutStart());
-			const response = await fetch(
-				"http://localhost:8080/api/v1/auth/logout");
+		// try {
+		// 	dispatch(logoutStart());
+		// 	const response = await fetch(
+		// 		"http://localhost:8080/api/v1/auth/logout");
 
-			const data: AuthResponse = await response.json();
-			console.log(data)
-			toast.success(data.message);
-			dispatch(logoutSuccess());
-		} catch (err) {
-			dispatch(logoutError(`${err}`));
-		}
+		// 	const data: AuthResponse = await response.json();
+		// 	console.log(data)
+		// 	toast.success(data.message);
+		// 	dispatch(logoutSuccess());
+		// } catch (err) {
+		// 	dispatch(logoutError(`${err}`));
+		// }
+		toast.success("success");
+    dispatch(logoutSuccess());
 	},
 );
 
