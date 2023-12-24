@@ -48,6 +48,7 @@ const userRegister = createAsyncThunk(
 const userLogin = createAsyncThunk(
 	"auth/login",
 	async (userdata: UserData, { dispatch }) => {
+		
 		try {
 			dispatch(loginStart());
 			const response = await fetch(
@@ -63,6 +64,7 @@ const userLogin = createAsyncThunk(
 
 			const data: AuthResponse = await response.json();
 			toast.success(data.message);
+
 			dispatch(loginSuccess(data.user));
 		} catch (err) {
 			dispatch(loginError(`${err}`));

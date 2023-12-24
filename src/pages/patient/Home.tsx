@@ -3,7 +3,7 @@ import { patientImages } from "../../data/patient/images";
 const Home: React.FC = () => {
   return (
     <>
-      <div className="flex flex-1 flex-shrink-0 flex-col  bg-bgHomeGreenSecond mt-8 justify-center md:flex-row">
+      <div className="flex  flex-col w-screen  bg-bgHomeGreenSecond mt-8 justify-center md:flex-row">
         <div className="w-full font-sans p-4 sm:p-8 md:p-16 mt-20 md:mt-32 md:w-2/4">
           <h1
             className="text-xl sm:text-xl uppercase font-rubik text-textGreenFirst"
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-around h-96 sm:h-fit bg-bgFooterGreen sm:flex-row">
+      <div className="flex flex-col items-center w-screen justify-center  gap-9 h-96 sm:h-fit bg-bgFooterGreen sm:flex-row">
         <div className="flex h-52 items-center gap-3 w-full sm:w-80">
           <div className="bg-white p-3 rounded-full">
             <img
@@ -94,15 +94,15 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center sm:flex-row gap-4 p-6 border-bgBorder border-b-2 mb-3">
+      <div className="flex flex-col justify-center w-screen items-center sm:flex-row gap-4 p-6 border-bgBorder border-b-2 mb-3">
         <div className="flex flex-col justify-around p-7 gap-4 sm:flex-row">
           <img
-            className="h-[350px] sm:w-[350px]"
+            className="h-[350px] sm:w-[200px]"
             src={patientImages.home_young_women_doctor}
             alt="young-women-doctor"
           />
           <img
-            className="h-[350px] mt-6 sm:mt-0 sm:w-[350px]"
+            className="h-[350px] mt-0 sm:mt-6 sm:w-[200px]"
             src={patientImages.home_doctor_discussion}
             alt="doctors-discussion"
           />
@@ -147,7 +147,7 @@ const Home: React.FC = () => {
 
       {/* ---------------------------------------------------------------------- */}
 
-      <div className="max-w-screen-xl flex flex-col p-10 mb-3 border-b-bgBorder border-b-2">
+      <div className="flex flex-col p-10 mb-3 w-screen  border-b-bgBorder border-b-2 justify-center">
         <h1
           className="text-xl uppercase text-textGreenFirst"
           style={{ letterSpacing: "3px" }}
@@ -158,11 +158,11 @@ const Home: React.FC = () => {
           Amazing Medical Facilities Just for You
         </h1>
 
-        <div className="grid grid-flow-col grid-rows-6 md:grid-rows-2 sm:grid-rows-3 grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-6 mt-6">
+        <div className="flex flex-wrap mt-6 gap-7 justify-center">
           {[1, 2, 3, 4, 5, 6].map((item) => (
             <div
               key={item}
-              className="bg-bgCardLightGreen p-8 flex flex-col justify-around gap-3"
+              className="bg-bgCardLightGreen p-8 flex flex-col justify-around w-[350px]"
             >
               <div className="bg-white w-16 h-14 p-2 rounded-full flex items-center justify-center">
                 <img
@@ -191,7 +191,7 @@ const Home: React.FC = () => {
             backgroundImage: `url(${patientImages.home_doctor_bg_image})`,
           }}
         >
-          <div className="bg-bgFooterGreen flex flex-col justify-between text-white h-full w-full md:w-[400px] rounded-md p-10 items-start">
+          <div className="bg-bgFooterGreen flex flex-col justify-center text-white h-full w-screen md:w-[400px] rounded-md p-10 ">
             <h1 className="uppercase" style={{ letterSpacing: "3px" }}>
               Working Hours
             </h1>
@@ -329,7 +329,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="p-10 flex flex-col justify-between items-center gap-11">
+      <div className="p-10 flex flex-col justify-between items-center gap-11 w-screen">
         <h1
           className="text-lg uppercase text-textGreenFirst"
           style={{ letterSpacing: "3px" }}
@@ -348,7 +348,7 @@ const Home: React.FC = () => {
               className="flex flex-col items-center w-full md:w-auto"
             >
               <img
-                className="h-56 mb-3"
+                className="h-[300px] w-[250px] mb-3"
                 src={patientImages.home_card_doctor_image}
                 alt=""
               />
@@ -359,7 +359,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex bg-bgFooterGreen mt-6 justify-center max-w-screen-xl mb-4 md:mb-0 h-auto md:h-[300px]">
+      <div className="flex bg-bgFooterGreen mt-6 justify-center w-screen mb-4 md:mb-0 h-auto md:h-[300px]">
         <div className="p-6 md:w-[500px] flex flex-col justify-center items-center md:items-start">
           <h1
             className="text-lg uppercase font-rubik text-white"
@@ -394,10 +394,76 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-center items-center mt-10 gap-5">
-        <div className="w-full md:w-[250px] lg:w-[300px] flex flex-col shadow-md rounded-md mb-4">
+      <div className="flex flex-col md:flex-row gap-5 w-full overflow-x-auto justify-center">
+        <div className="flex flex-col items-center w-full md:w-auto">
           <img
-            className="h-[270px] w-full object-cover rounded-t-md"
+            className="h-[300px] w-[250px] "
+            src={patientImages.home_card_doctor_image}
+            alt=""
+          />
+          <div className="p-3 flex flex-col">
+            <p
+              className="text-xs text-textGreenFirst uppercase"
+              style={{ letterSpacing: "1px" }}
+            >
+              September 20, 2023
+            </p>
+            <h1 className="font-semibold text-sm mt-2">
+              Can creatine supplements help people
+            </h1>
+            <p className="text-xs text-gray-400 mt-2">
+              I apologize for any confusion. It seems there was a...
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center w-full md:w-auto">
+          <img
+            className="h-[300px] w-[250px] mb-3"
+            src={patientImages.home_card_doctor_image}
+            alt=""
+          />
+          <div className="p-3 flex flex-col">
+            <p
+              className="text-xs text-textGreenFirst uppercase"
+              style={{ letterSpacing: "1px" }}
+            >
+              September 20, 2023
+            </p>
+            <h1 className="font-semibold text-sm mt-2">
+              Can creatine supplements help people
+            </h1>
+            <p className="text-xs text-gray-400 mt-2">
+              I apologize for any confusion. It seems there was a...
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center w-full md:w-auto">
+          <img
+            className="h-[300px] w-[250px] mb-3"
+            src={patientImages.home_card_doctor_image}
+            alt=""
+          />
+          <div className="p-3 flex flex-col">
+            <p
+              className="text-xs text-textGreenFirst uppercase"
+              style={{ letterSpacing: "1px" }}
+            >
+              September 20, 2023
+            </p>
+            <h1 className="font-semibold text-sm mt-2">
+              Can creatine supplements help people
+            </h1>
+            <p className="text-xs text-gray-400 mt-2">
+              I apologize for any confusion. It seems there was a...
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center w-full md:w-auto">
+          <img
+            className="h-[300px] w-[250px] mb-3"
             src={patientImages.home_card_doctor_image}
             alt=""
           />
@@ -418,72 +484,6 @@ const Home: React.FC = () => {
         </div>
 
         {/* Repeat similar structure for other cards */}
-
-        <div className="w-full md:w-[250px] lg:w-[300px] flex flex-col shadow-md rounded-md mb-4">
-          <img
-            className="h-[270px] w-full object-cover rounded-t-md"
-            src={patientImages.home_card_doctor_image}
-            alt=""
-          />
-          <div className="p-3 flex flex-col">
-            <p
-              className="text-xs text-textGreenFirst uppercase"
-              style={{ letterSpacing: "1px" }}
-            >
-              September 20, 2023
-            </p>
-            <h1 className="font-semibold text-sm mt-2">
-              Can creatine supplements help people
-            </h1>
-            <p className="text-xs text-gray-400 mt-2">
-              I apologize for any confusion. It seems there was a...
-            </p>
-          </div>
-        </div>
-
-        <div className="w-full md:w-[250px] lg:w-[300px] flex flex-col shadow-md rounded-md mb-4">
-          <img
-            className="h-[270px] w-full object-cover rounded-t-md"
-            src={patientImages.home_card_doctor_image}
-            alt=""
-          />
-          <div className="p-3 flex flex-col">
-            <p
-              className="text-xs text-textGreenFirst uppercase"
-              style={{ letterSpacing: "1px" }}
-            >
-              September 20, 2023
-            </p>
-            <h1 className="font-semibold text-sm mt-2">
-              Can creatine supplements help people
-            </h1>
-            <p className="text-xs text-gray-400 mt-2">
-              I apologize for any confusion. It seems there was a...
-            </p>
-          </div>
-        </div>
-
-        <div className="w-full md:w-[250px] lg:w-[300px] flex flex-col shadow-md rounded-md mb-4">
-          <img
-            className="h-[270px] w-full object-cover rounded-t-md"
-            src={patientImages.home_card_doctor_image}
-            alt=""
-          />
-          <div className="p-3 flex flex-col">
-            <p
-              className="text-xs text-textGreenFirst uppercase"
-              style={{ letterSpacing: "1px" }}
-            >
-              September 20, 2023
-            </p>
-            <h1 className="font-semibold text-sm mt-2">
-              Can creatine supplements help people
-            </h1>
-            <p className="text-xs text-gray-400 mt-2">
-              I apologize for any confusion. It seems there was a...
-            </p>
-          </div>
-        </div>
 
         {/* Repeat similar structure for other cards */}
       </div>
