@@ -25,15 +25,15 @@ const userRegister = createAsyncThunk(
 		try {
 			dispatch(registerStart());
 			const response = await fetch(
-				"http://localhost:8080/api/oxyzen/auth/signup",
-				{
-					method: "POST",
-					headers: {
-						"Content-Type": "application/json",
-					},
-					body: JSON.stringify(userdata),
-				},
-			);
+        "https://frantic-cow-shrug.cyclic.app/api/oxyzen/auth/signup",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userdata),
+        }
+      );
 
 			const data: AuthResponse = await response.json();
 			console.log(data,"--------")
@@ -51,15 +51,15 @@ const userLogin = createAsyncThunk(
 		try {
 			dispatch(loginStart());
 			const response = await fetch(
-				"http://localhost:8080/api/oxyzen/auth/signin",
-				{
-					method: "POST",
-					headers: {
-						"Content-Type": "application/json",
-					},
-					body: JSON.stringify(userdata),
-				},
-			);
+        "https://frantic-cow-shrug.cyclic.app/api/oxyzen/auth/signin",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userdata),
+        }
+      );
 
 			const data: AuthResponse = await response.json();
 			toast.success(data.message);
