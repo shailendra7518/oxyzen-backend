@@ -18,10 +18,10 @@ const Home: React.FC = () => {
             and Heal Your
           </h1>
           <h1 className="text-3xl sm:text-4xl w-full font-rubik">
-            Help Problems
+            Health Problems
           </h1>
 
-          <div className="mt-4 sm:mt-8 ml-0 sm:ml-0 flex flex-col gap-3">
+          <div className="mt-4 sm:mt-8 ml-0 sm:ml-0 flex flex-wrap  gap-3">
             <button className="bg-bgNormalButtonGreen text-xs sm:text-sm text-white  sm:w-44  p-2 pl-3 pr-3 rounded-full">
               Get Started
             </button>
@@ -44,14 +44,14 @@ const Home: React.FC = () => {
         <div className="flex h-52 items-center gap-3 w-full sm:w-80">
           <div className="bg-white p-3 rounded-full">
             <img
-              className="h-10 w-24 sm:w-32"
+              className="h-10 w-24"
               src={patientImages.home_doctor_icon}
               alt="doctor-icon"
             />
           </div>
           <div className="flex flex-col justify-between text-white h-20">
-            <h1 className="text-xl font-semibold">Expert Doctors</h1>
-            <p className="text-xs font-semibold">
+            <h1 className="text-2xl ">Expert Doctors</h1>
+            <p className="text-sm">
               They are always answerable to consultant. This is the lowest level
               of doctor in the hierarchy
             </p>
@@ -61,17 +61,16 @@ const Home: React.FC = () => {
         <div className="flex h-52 items-center justify-between gap-3 w-full sm:w-80">
           <div className="bg-white p-3 rounded-full">
             <img
-              className="h-10 w-32"
+              className="h-10 w-24"
               src={patientImages.home_hospital_icon}
               alt="hospital-icon"
             />
           </div>
           <div className="flex flex-col justify-between text-white h-20">
-            <h1 className="text-xl font-semibold">Emergency Care</h1>
-            <p className="text-xs font-semibold">
+            <h1 className="text-2xl ">Emergency Care</h1>
+            <p className="text-sm">
               Emergency Care is the backbone of healthcare, providing crucial
-              medical treatment to individual sudden, life-threatening illnesses
-              or injuries
+              medical
             </p>
           </div>
         </div>
@@ -79,14 +78,14 @@ const Home: React.FC = () => {
         <div className="flex h-52 items-center gap-3 w-full sm:w-80">
           <div className="bg-white p-3 rounded-full">
             <img
-              className="h-10 w-24 sm:w-32"
+              className="h-10 w-24"
               src={patientImages.home_call_icon}
               alt="call-icon"
             />
           </div>
           <div className="flex flex-col justify-between text-white h-20">
-            <h1 className="text-xl font-semibold">24/7 Full Support</h1>
-            <p className="text-xs font-semibold">
+            <h1 className="text-2xl ">24/7 Full Support</h1>
+            <p className="text-sm">
               Helplines are often available 24/7 so you can contact them at any
               time of the day or night.
             </p>
@@ -107,7 +106,7 @@ const Home: React.FC = () => {
             alt="doctors-discussion"
           />
         </div>
-        <div className="p-7 max-w-lg flex flex-col justify-around">
+        <div className="p-7 max-w-lg flex flex-col justify-between gap-6">
           <h1
             className="text-xl uppercase text-textGreenFirst"
             style={{ letterSpacing: "3px" }}
@@ -117,7 +116,7 @@ const Home: React.FC = () => {
           <h1 className="text-3xl font-semibold">
             We Collaborate for Better Healthcare
           </h1>
-          <p className="text-xs font-semibold text-textNormalGray">
+          <p className="text-sm  text-gray-500">
             I apologize for any confusion. It seems there was a
             misunderstanding. The code I provided is the same as the one you
             shared. It looks correct, and it should work as intended.
@@ -126,14 +125,14 @@ const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-between gap-4">
             <div className="w-full sm:w-56">
               <h1 className="font-semibold">Our Vision</h1>
-              <p className="text-xs font-semibold text-textNormalGray">
+              <p className="text-sm  text-gray-500">
                 The code I provided is the same as the one you shared. It looks
                 correct, and it should work as intended.
               </p>
             </div>
             <div className="w-full sm:w-56">
               <h1 className="font-semibold">Our Mission</h1>
-              <p className="text-xs font-semibold text-textNormalGray">
+              <p className="text-sm  text-gray-500">
                 The code I provided is the same as the one you shared. It looks
                 correct, and it should work as intended.
               </p>
@@ -145,7 +144,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      {/* ---------------------------------------------------------------------- */}
+
 
       <div className="flex flex-col p-10 mb-3 w-screen  border-b-bgBorder border-b-2 justify-center">
         <h1
@@ -173,7 +172,7 @@ const Home: React.FC = () => {
               </div>
 
               <h1 className="font-semibold">Service {item}</h1>
-              <p className="text-xs font-semibold text-textNormalGray">
+              <p className="text-sm text-gray-500">
                 I apologize for any confusion. It seems there was a
                 misunderstanding. The code I provided is the same as the one you
                 shared. It looks correct, and it should work as intended.
@@ -191,12 +190,12 @@ const Home: React.FC = () => {
             backgroundImage: `url(${patientImages.home_doctor_bg_image})`,
           }}
         >
-          <div className="bg-bgFooterGreen flex flex-col justify-center text-white h-full w-screen md:w-[400px] rounded-md p-10 ">
+          <div className="bg-bgFooterGreen flex flex-col justify-center text-white h-full w-screen md:w-[400px] rounded-md p-10 gap-4 ">
             <h1 className="uppercase" style={{ letterSpacing: "3px" }}>
               Working Hours
             </h1>
             <h1 className="font-semibold text-xl">Healthcare at its Finest</h1>
-            <p className="text-xs font-semibold text-gray-200">
+            <p className="text-sm text-gray-100">
               I apologize for any confusion. It seems there was a
               misunderstanding. The code I provided is the same as the one you
               shared. It looks correct, and it should work as intended.
@@ -205,7 +204,7 @@ const Home: React.FC = () => {
             {[1, 2, 3, 4].map((item) => (
               <div
                 key={item}
-                className="flex items-center gap-3 border-b-2 pb-2 border-bgBorder"
+                className="flex flex-wrap items-center gap-3 border-b-2 pb-2 border-bgBorder"
               >
                 <p className="text-lg"> Mon - Wed</p>
                 <p className="text-lg"> 7Am - 11Pm</p>
@@ -371,7 +370,7 @@ const Home: React.FC = () => {
             We Are Here to Hear and Heal Your Health Problems
           </h1>
 
-          <p className="text-sm text-gray-200 w-full md:w-[320px] text-center md:text-left mt-4">
+          <p className="text-sm text-white w-full md:w-[320px] text-center md:text-left mt-4">
             I apologize for any confusion. It seems there was a
             misunderstanding. The code I provided is the same as the one you
             shared.
@@ -394,7 +393,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-5 w-full overflow-x-auto justify-center">
+      <div className="flex flex-col md:flex-row gap-5 w-full overflow-x-auto justify-center mt-5">
         <div className="flex flex-col items-center w-full md:w-auto">
           <img
             className="h-[300px] w-[250px] "

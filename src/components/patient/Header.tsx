@@ -18,7 +18,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <div className="flex flex-1 fixed top-0 bg-bgCardWhite items-center content-center justify-center p-5 shadow-sm text-textNavLinkNormal w-screen">
+      <div className="flex flex-1 bg-bgCardWhite items-center content-center justify-around p-5 shadow-sm text-textNavLinkNormal max-w-screen ">
         <img className="h-9" src={commonImages.company_logo} alt="logo" />
         <div className="hidden justify-between items-center uppercase ml-10 w-3/5 md:flex ">
           <Navbar />
