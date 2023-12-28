@@ -183,12 +183,12 @@ const Home: React.FC = () => {
         </div>
 
         <div
-          className="flex justify-end p-12 mt-24 bg-cover bg-center "
+          className="flex justify-end p-12 mt-24 bg-cover bg-center  "
           style={{
             backgroundImage: `url(${patientImages.home_doctor_bg_image})`,
           }}
         >
-          <div className="bg-bgFooterGreen flex flex-col justify-center text-white h-full w-screen md:w-[400px] rounded-md p-10 gap-4 ">
+          <div className="bg-bgFooterGreen flex flex-col justify-center text-white h-full w-full md:w-[40vw] rounded-md p-10 gap-4 ">
             <h1 className="uppercase" style={{ letterSpacing: "3px" }}>
               Working Hours
             </h1>
@@ -202,7 +202,7 @@ const Home: React.FC = () => {
             {[1, 2, 3, 4].map((item) => (
               <div
                 key={item}
-                className="flex flex-wrap items-center gap-3 border-b-2 pb-2 border-bgBorder"
+                className="flex flex-wrap items-center justify-between  gap-3 border-b-2 pb-2 border-bgBorder"
               >
                 <p className="text-lg"> Mon - Wed</p>
                 <p className="text-lg"> 7Am - 11Pm</p>
@@ -212,7 +212,7 @@ const Home: React.FC = () => {
               </div>
             ))}
 
-            <button className="bg-bgFooterButton p-1 pl-4 pr-4 text-sm rounded-full border-2 border-bgBorder transition-transform duration-300 ease-in-out transform hover:scale-105 transition-delay-150 hover:bg-bgNormalButtonGreen">
+            <button className="bg-bgFooterButton p-1 pl-4 pr-4 text-sm rounded-full border-2 border-bgBorder transition-transform duration-300 ease-in-out transform hover:scale-105 transition-delay-150 hover:bg-bgNormalButtonGreen mt-8">
               Make an Appointment
             </button>
           </div>
