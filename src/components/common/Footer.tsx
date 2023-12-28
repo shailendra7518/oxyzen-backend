@@ -3,62 +3,65 @@ import { Link } from "react-router-dom";
 import { commonImages } from "../../data/common/images";
 
 const Footer: React.FC = () => {
-	return (
-		<div className="bg-bgFooterGreen text-textNormalWhite font-semibold p-10">
-			<div className="flex flex-col justify-center gap-7 sm:flex-row">
-				<div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
-					<img src={commonImages.company_logo} alt="logo-image" className="mb-4 sm:mb-0" />
-					<p className="text-sm text-center sm:text-left">
-						In this version, I've replaced the color values with the key names as
-						strings for each color definition.
-					</p>
-				</div>
-				<div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
-					<h1 className="text-2xl ">Address</h1>
-					<p className="text-sm text-center sm:text-left">
-						key names as strings for each color definition.
-					</p>
-					<h1 className="text-2xl  mt-4 sm:mt-6">Contact</h1>
-					<p className="text-sm">+91 7518034435</p>
-					<p className="text-sm">shailendraftp0001@gmail.com</p>
-				</div>
-				<div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
-					<h1 className="text-2xl ">Explore</h1>
-					<Link className="text-sm" to="/">
-						Home
-					</Link>
-					<Link className="text-sm" to="/">
-						About
-					</Link>
-					<Link className="text-sm" to="/">
-						Services
-					</Link>
-					<Link className="text-sm" to="/">
-						Blogs
-					</Link>
-					<Link className="text-sm" to="/">
-						Team
-					</Link>
-				</div>
-				<div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
-					<h1 className="text-2xl ">Resources</h1>
-					<Link className="text-sm" to="/">
-						Documentation
-					</Link>
-					<Link className="text-sm" to="/">
-						Privacy Policy
-					</Link>
-					<Link className="text-sm" to="/">
-						Press Files
-					</Link>
-					<Link className="text-sm" to="/">
-						Contacts
-					</Link>
-				</div>
-			</div>
-		
-		</div>
-	);
+  return (
+    <div className="bg-bgFooterGreen text-white  p-10">
+      <div className="flex flex-col justify-center gap-7 sm:flex-row">
+        <div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
+          <img
+            src={commonImages.company_logo}
+            alt="logo-image"
+            className="mb-4 sm:mb-0"
+          />
+          <p className="text-sm text-center sm:text-left">
+            In this version, I've replaced the color values with the key names
+            as strings for each color definition.
+          </p>
+        </div>
+        <div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
+          <h1 className="text-2xl ">Address</h1>
+          <p className="text-sm text-center sm:text-left">
+            key names as strings for each color definition.
+          </p>
+          <h1 className="text-2xl  mt-4 sm:mt-6">Contact</h1>
+          <p className="text-sm">+91 7518034435</p>
+          <p className="text-sm">shailendraftp0001@gmail.com</p>
+        </div>
+        <div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
+          <h1 className="text-2xl ">Explore</h1>
+          <Link className="text-sm" to="/">
+            Home
+          </Link>
+          <Link className="text-sm" to="/">
+            About
+          </Link>
+          <Link className="text-sm" to="/">
+            Services
+          </Link>
+          <Link className="text-sm" to="/">
+            Blogs
+          </Link>
+          <Link className="text-sm" to="/">
+            Team
+          </Link>
+        </div>
+        <div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
+          <h1 className="text-2xl ">Resources</h1>
+          <Link className="text-sm" to="/">
+            Documentation
+          </Link>
+          <Link className="text-sm" to="/">
+            Privacy Policy
+          </Link>
+          <Link className="text-sm" to="/">
+            Press Files
+          </Link>
+          <Link className="text-sm" to="/">
+            Contacts
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Footer;

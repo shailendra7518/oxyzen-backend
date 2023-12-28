@@ -3,39 +3,39 @@ import { patientImages } from "../../data/patient/images";
 const Home: React.FC = () => {
   return (
     <>
-      <div className="flex  flex-col w-screen  bg-bgHomeGreenSecond mt-8 justify-center md:flex-row">
+      <div className="flex flex-col w-screen bg-bgHomeGreenSecond justify-center md:flex-row">
         <div className="w-full font-sans p-4 sm:p-8 md:p-16 mt-20 md:mt-32 md:w-2/4">
           <h1
-            className="text-xl sm:text-xl uppercase font-rubik text-textGreenFirst"
+            className="text-xl sm:text-xl uppercase font-rubik text-textGreenFirst "
             style={{ letterSpacing: "3px" }}
           >
             Welcome to Oxyzen
           </h1>
-          <h1 className="text-3xl sm:text-4xl w-full mt-6 font-rubik">
+          <h1 className="text-3xl sm:text-4xl w-full mt-6 font-rubik ">
             We Are Here to Hear
           </h1>
-          <h1 className="text-3xl sm:text-4xl w-full font-rubik">
+          <h1 className="text-3xl sm:text-4xl w-full font-rubik ">
             and Heal Your
           </h1>
-          <h1 className="text-3xl sm:text-4xl w-full font-rubik">
+          <h1 className="text-3xl sm:text-4xl w-full font-rubik ">
             Health Problems
           </h1>
 
-          <div className="mt-4 sm:mt-8 ml-0 sm:ml-0 flex flex-wrap  gap-3">
-            <button className="bg-bgNormalButtonGreen text-xs sm:text-sm text-white  sm:w-44  p-2 pl-3 pr-3 rounded-full">
+          <div className="mt-4 sm:mt-8 ml-0 sm:ml-0 flex flex-wrap gap-3">
+            <button className="border-2 border-bgFooterButton hover:bg-bgNormalButtonGreen text-xs sm:text-sm sm:w-44 p-2 pl-3 pr-3 rounded-full ">
               Get Started
             </button>
-            <button className="border-bgFooterButton text-xs sm:text-sm font-semibold border-2 text-textNormalBlack p-2 pl-3 pr-3  sm:w-44 rounded-full">
+            <button className="border-bgFooterButton hover:bg-bgNormalButtonGreen text-xs sm:text-sm font-semibold border-2 text-textNormalBlack p-2 pl-3 pr-3 sm:w-44 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105 transition-delay-150">
               Contact Us
             </button>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center md:items-end md:justify-end">
           <img
-            className="w-full sm:max-w-xs md:max-w-full"
+            className="w-full sm:max-w-xs md:max-w-full transition-transform duration-500 ease-in-out transform hover:scale-105"
             src={patientImages.home_happy_standing_doctor}
             alt="happy-doctor-image"
-            style={{ maxWidth: "300px" }} // Adjust the max-width as needed
+            style={{ maxWidth: "300px" }}
           />
         </div>
       </div>
@@ -138,13 +138,11 @@ const Home: React.FC = () => {
               </p>
             </div>
           </div>
-          <button className="bg-bgNormalButtonGreen text-sm font-semibold text-white p-2 pl-4 pr-4 w-full sm:w-32 rounded-full mt-4 sm:mt-0">
+          <button className="bg-bgNormalButtonGreen text-sm font-semibold text-white p-2 pl-4 pr-4 w-full sm:w-32 rounded-full mt-4 sm:mt-0 transition-transform duration-300 ease-in-out transform hover:scale-105 transition-delay-150 hover:bg-bgNormalButtonGreen">
             Learn More
           </button>
         </div>
       </div>
-
-
 
       <div className="flex flex-col p-10 mb-3 w-screen  border-b-bgBorder border-b-2 justify-center">
         <h1
@@ -161,7 +159,7 @@ const Home: React.FC = () => {
           {[1, 2, 3, 4, 5, 6].map((item) => (
             <div
               key={item}
-              className="bg-bgCardLightGreen p-8 flex flex-col justify-around w-[350px]"
+              className="bg-bgCardLightGreen p-8 flex flex-col justify-around w-[350px] transition-transform duration-300 ease-in-out transform hover:scale-105"
             >
               <div className="bg-white w-16 h-14 p-2 rounded-full flex items-center justify-center">
                 <img
@@ -177,7 +175,7 @@ const Home: React.FC = () => {
                 misunderstanding. The code I provided is the same as the one you
                 shared. It looks correct, and it should work as intended.
               </p>
-              <p className="text-bgNormalButtonGreen font-semibold text-xs">
+              <p className="text-bgNormalButtonGreen font-semibold text-xs hover:underline">
                 Learn More &rarr;
               </p>
             </div>
@@ -208,13 +206,13 @@ const Home: React.FC = () => {
               >
                 <p className="text-lg"> Mon - Wed</p>
                 <p className="text-lg"> 7Am - 11Pm</p>
-                <button className="bg-bgFooterButton p-1 pl-3 pr-3 text-sm rounded-full border-2 border-bgBorder">
+                <button className="bg-bgFooterButton p-1 pl-3 pr-3 text-sm rounded-full border-2 border-bgBorder transition-transform duration-300 ease-in-out transform hover:scale-105 transition-delay-150 hover:bg-bgNormalButtonGreen">
                   Book Now
                 </button>
               </div>
             ))}
 
-            <button className="bg-bgFooterButton p-1 pl-4 pr-4 text-sm rounded-full border-2 border-bgBorder">
+            <button className="bg-bgFooterButton p-1 pl-4 pr-4 text-sm rounded-full border-2 border-bgBorder transition-transform duration-300 ease-in-out transform hover:scale-105 transition-delay-150 hover:bg-bgNormalButtonGreen">
               Make an Appointment
             </button>
           </div>

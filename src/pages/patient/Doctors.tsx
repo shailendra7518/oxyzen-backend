@@ -17,7 +17,7 @@ const Doctors: React.FC = () => {
 	};
 
 	return (
-		<div className="grid grid-cols-4 gap-6 mt-24 p-16">
+		<div className="grid grid-cols-4 gap-6 p-16">
 			{newArray.map((_, index) => (
 				<DoctorCard key={index} {...customProps} />
 			))}
