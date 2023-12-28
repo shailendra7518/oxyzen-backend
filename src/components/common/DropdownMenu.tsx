@@ -25,7 +25,7 @@ const DropdownMenu: React.FC = () => {
 			<button
 				onClick={handleDropdownToggle}
 				type="button"
-				className="bg-bgNormalButtonGreen p-2 font-semibold text-xs text-white"
+				className="bg-bgNormalButtonGreen p-2 font-semibold text-xs rounded-full text-white"
 			>
 				{user?.name}
 			</button>

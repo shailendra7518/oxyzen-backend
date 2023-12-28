@@ -15,7 +15,7 @@ import { IoLocationOutline } from "react-icons/io5";
 export const StyledHeader = () => (
   <header className="bg-white  p-4 relative z-10  pl-56 pr-40">
     <div className="container mx-auto flex  items-center justify-center gap-4 border-2 border-gray-300 rounded-md ">
-      <div className="flex items-center flex-wrap p-1">
+      <div className="flex items-center flex-wrap">
         <div className="flex items-center pl-2 w-[40vw]">
           <CiSearch className="text-gray-500" />
           <input
@@ -25,7 +25,7 @@ export const StyledHeader = () => (
           />
         </div>
 
-        <div className="flex items-center pl-2  border-l-2 border-gray-300 w-[20vw]">
+        <div className="flex items-center pl-2  border-l-2 border-gray-300 w-[15vw]">
           <IoLocationOutline className="text-gray-500" />
           <input
             type="text"
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
           ) : (
             <Link
               to={"/auth/login"}
-              className="bg-bgNormalButtonGreen p-2 font-semibold text-xs text-white"
+              className="bg-bgNormalButtonGreen p-2 font-semibold text-xs text-white rounded-full"
             >
               Login
             </Link>
