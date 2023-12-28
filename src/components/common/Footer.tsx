@@ -15,16 +15,16 @@ const Footer: React.FC = () => {
          
         </div>
         <div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
-          <h1 className="text-2xl ">Address</h1>
+          <h1 className="text-2xl mb-2">Address</h1>
           <p className="text-sm text-center sm:text-left">
             key names as strings for each color definition.
           </p>
-          <h1 className="text-2xl  mt-4 sm:mt-6">Contact</h1>
+          <h1 className="text-2xl mb-2 mt-4 sm:mt-6">Contact</h1>
           <p className="text-sm">+91 7518034435</p>
           <p className="text-sm">shailendraftp0001@gmail.com</p>
         </div>
         <div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
-          <h1 className="text-2xl ">Explore</h1>
+          <h1 className="text-2xl mb-2">Explore</h1>
           <Link className="text-sm" to="/">
             Home
           </Link>
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
           </Link>
         </div>
         <div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
-          <h1 className="text-2xl ">Resources</h1>
+          <h1 className="text-2xl mb-2">Resources</h1>
           <Link className="text-sm" to="/">
             Documentation
           </Link>
