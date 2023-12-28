@@ -4,7 +4,7 @@ import { commonImages } from "../../data/common/images";
 
 const Footer: React.FC = () => {
   return (
-    <div className="bg-bgFooterGreen text-white  p-10">
+    <div className="bg-bgFooterGreen text-white  p-10 mt-10">
       <div className="flex flex-col justify-center gap-7 sm:flex-row">
         <div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
           <img
