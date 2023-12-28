@@ -10,6 +10,8 @@ import doctorIcon from "../../assets/doctor_icon.png";
 import hospitalIcon from "../../assets/hospital_icon.png";
 import callIcon from "../../assets/phone-call-icon.png";
 import medicineIcon from "../../assets/medicine_icon.png";
+import DoctorShalini from '../../assets/doctors/shalini.png'
+import DoctorHardik from '../../assets/doctors/hardik.png'
 
 export const patientImages = {
 	// home page images section
@@ -25,6 +27,9 @@ export const patientImages = {
 
 	// doctors page card images section
 	doctor_card_image: youngDoctorBg,
+	doctor_shalini_card_image: DoctorShalini,
+	doctor_hardik_card_image:DoctorHardik,
+	
 	// hospitals page card images section
 	hospital_card_image: hospitalCardImage,
 	// icons section
@@ -32,4 +37,5 @@ export const patientImages = {
 	home_hospital_icon: hospitalIcon,
 	home_call_icon: callIcon,
 	home_medicine_icon: medicineIcon,
+
 };

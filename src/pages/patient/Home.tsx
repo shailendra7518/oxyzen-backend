@@ -1,6 +1,12 @@
 import { patientImages } from "../../data/patient/images";
 
 const Home: React.FC = () => {
+  // const demoDoctor = [
+  //   {
+  //     image: null,
+  //     date: "September 20, 2023",
+  //   },
+  // ];
   return (
     <>
       <div className="flex flex-col w-screen bg-bgHomeGreenSecond justify-center md:flex-row">

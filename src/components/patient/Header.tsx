@@ -63,7 +63,7 @@ const Header: React.FC = () => {
           ) : (
             <Link
               to={"/auth/login"}
-              className="bg-bgNormalButtonGreen p-2 font-semibold text-xs text-white rounded-full"
+              className="bg-bgNormalButtonGreen p-2 font-semibold text-xs text-white rounded-full pl-5 pr-5"
             >
               Login
             </Link>
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
           <Navbar />
         </div>
       )}
-      <StyledHeader />
+      {/* <StyledHeader /> */}
     </div>
   );
 };

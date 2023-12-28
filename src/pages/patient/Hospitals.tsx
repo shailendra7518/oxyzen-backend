@@ -1,6 +1,7 @@
 import React from "react";
 import HospitalCard from "../../components/HospitalCard";
 import { patientImages } from "../../data/patient/images";
+import { StyledHeader } from "../../components/patient/Header";
 interface HospitalsProps {}
 
 interface HospitalCardProps {
@@ -29,12 +30,15 @@ const Hospitals: React.FC<HospitalsProps> = () => {
 	};
 
 	return (
-		<div className="grid grid-cols-4 gap-6  p-16">
-			{newArray.map(() => (
-				<HospitalCard {...customProps} />
-			))}
-		</div>
-	);
+		<>
+			<StyledHeader/>
+      <div className="grid grid-cols-4 gap-6  p-16">
+        {newArray.map(() => (
+          <HospitalCard {...customProps} />
+        ))}
+      </div>
+    </>
+  );
 };
 
 export default Hospitals;

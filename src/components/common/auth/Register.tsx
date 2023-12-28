@@ -34,9 +34,9 @@ const Register: React.FC = () => {
 	};
 
 	return (
-    <div className="flex flex-col md:flex-row min-h-screen items-center justify-center mt-20 sm:mt-0">
+    <div className="flex flex-col md:flex-row min-h-screen items-start justify-center mt-10">
       {/* Left side image */}
-      <div className="flex justify-center items-center w-full md:w-1/3">
+      <div className="flex justify-center mt-2 w-full md:w-1/3">
         <img
           className="rounded h-80 mb-4 w-80 max-w-md"
           src={commonImages.register_side_image}
@@ -47,7 +47,7 @@ const Register: React.FC = () => {
       {/* Right side form */}
       <div className="flex justify-center items-center w-full md:w-1/2 p-4 md:p-8">
         <form
-          className="bg-bgCardLightGreen shadow-md rounded px-4 md:px-8 pt-6 pb-8 mb-4 w-full max-w-md"
+          className="shadow-md rounded px-4 md:px-8 pt-6 pb-8 mb-4 w-full max-w-md transform scale-100 hover:scale-105 transition-transform duration-300 hover:border-2 border-bgFooterGreen hover:bg-white"
           onSubmit={handleSubmit}
         >
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-textGreenFirst uppercase">
@@ -60,7 +60,7 @@ const Register: React.FC = () => {
               id="name"
               onChange={handleChange}
               value={formData.name}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition-all duration-300 hover:border-bgFooterGreen"
               placeholder="Enter your full name"
             />
           </div>
@@ -71,7 +71,7 @@ const Register: React.FC = () => {
               id="email"
               onChange={handleChange}
               value={formData.email}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition-all duration-300 hover:border-bgFooterGreen"
               placeholder="Enter your email"
             />
           </div>
@@ -82,7 +82,7 @@ const Register: React.FC = () => {
               id="phone_number"
               onChange={handleChange}
               value={formData.phone_number}
-              className="shadow appearance-none border rounded w-full md:w-2/3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2 md:mb-0"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition-all duration-300 hover:border-bgFooterGreen"
               placeholder="Enter phone number"
             />
             {/* Dropdown for role */}
@@ -90,7 +90,7 @@ const Register: React.FC = () => {
               id="role"
               onChange={handleChange}
               value={formData.role}
-              className="shadow appearance-none border rounded w-full md:w-1/3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition-all duration-300 hover:border-bgFooterGreen"
             >
               <option value="">Select Role</option>
               <option value={Role.Patient}>Patient</option>
@@ -104,7 +104,7 @@ const Register: React.FC = () => {
               id="password"
               onChange={handleChange}
               value={formData.password}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition-all duration-300 hover:border-bgFooterGreen"
               placeholder="Enter your password"
             />
           </div>
@@ -124,7 +124,7 @@ const Register: React.FC = () => {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="bg-bgNormalButtonGreen hover:opacity-75 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline uppercase text-xl"
+              className="bg-bgNormalButtonGreen hover:opacity-75 text-white font-bold p-1 rounded-full pl-10 pr-10 focus:outline-none focus:shadow-outline uppercase text-xl"
             >
               Submit
             </button>

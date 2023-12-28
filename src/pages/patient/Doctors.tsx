@@ -1,28 +1,38 @@
 import React from "react";
 import DoctorCard, { DoctorCardProps } from "../../components/DoctorCard";
 import { patientImages } from "../../data/patient/images";
+import { StyledHeader } from "../../components/patient/Header";
 
 const Doctors: React.FC = () => {
-	const numberOfElements = 50;
-	const newArray = Array.from(
-		{ length: numberOfElements },
-		(_, index) => index + 1,
-	);
 
-	const customProps: DoctorCardProps = {
-		image: patientImages.doctor_card_image,
-		name: "Shailendra",
-		specialist: "Dentist",
-		experience: 7,
-	};
+
+	const doctorsData: DoctorCardProps[] = [
+    {
+      image: patientImages.doctor_shalini_card_image,
+      name: "Shalini Sharma",
+      specialist: "Dentist",
+      experience: 7,
+    },
+    {
+      image: patientImages.doctor_hardik_card_image,
+      name: "Hardik Shukla",
+      specialist: "CardioLogist",
+      experience: 4,
+    },
+  ];
 
 	return (
-		<div className="grid grid-cols-4 gap-6 p-16">
-			{newArray.map((_, index) => (
-				<DoctorCard key={index} {...customProps} />
-			))}
-		</div>
-	);
+    <>
+      <StyledHeader />
+
+      <div className="grid grid-cols-4 gap-6 p-16">
+        {doctorsData.map((doctor, index) => (
+          <DoctorCard key={index} {...doctor} />
+        ))}
+      </div>
+    </>
+  );
+			
 };
 
 export default Doctors;

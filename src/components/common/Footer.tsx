@@ -8,14 +8,11 @@ const Footer: React.FC = () => {
       <div className="flex flex-col justify-center gap-7 sm:flex-row">
         <div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
           <img
-            src={commonImages.company_logo}
+            src={commonImages.footer_logo}
             alt="logo-image"
             className="mb-4 sm:mb-0"
           />
-          <p className="text-sm text-center sm:text-left">
-            In this version, I've replaced the color values with the key names
-            as strings for each color definition.
-          </p>
+         
         </div>
         <div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
           <h1 className="text-2xl ">Address</h1>
