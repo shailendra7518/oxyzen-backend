@@ -80,11 +80,11 @@ const hospitalData:HospitalCardProps[] = [
 
 
 	return (
-		<>
-			<StyledHeader/>
-      <div className="grid grid-cols-4 gap-6  p-16">
-        {hospitalData.map((hopital,index) => (
-          <HospitalCard key={index} {...hopital} />
+    <>
+      <StyledHeader />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-16">
+        {hospitalData.map((hospital, index) => (
+          <HospitalCard key={index} {...hospital} />
         ))}
       </div>
     </>

@@ -25,7 +25,7 @@ const HospitalCard: React.FC<HospitalCardProps> = (props) => {
         <p className="text-gray-400 text-sm">₹ {minCost} Consultation Fees</p>
 
         <div className="flex justify-between mt-5">
-          <button className="text-sm flex items-center hover:underline">
+          <button className="text-sm flex items-center">
             <div className="text-xl text-textGreenFirst">
               <TbPointFilled />
             </div>
@@ -35,7 +35,7 @@ const HospitalCard: React.FC<HospitalCardProps> = (props) => {
             </div>
           </button>
           <button className="bg-bgNormalButtonGreen p-1 pl-3 pr-3 text-xs text-white rounded-lg hover:bg-bgHoverButtonGreen">
-            Book Appointment
+            Viwe Hospital
           </button>
         </div>
       </div>
