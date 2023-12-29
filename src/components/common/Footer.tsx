@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-center">
           <h1 className="text-2xl">Contact</h1>
           <p className="text-sm">+91 7518******</p>
-          <p className="text-sm">oxyencare@gmail.com</p>
+          <p className="text-sm">oxyzencare@gmail.com</p>
         </div>
       </div>
     </div>
