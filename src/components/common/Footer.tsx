@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
           <h1 className="text-2xl mb-2">Address</h1>
           <p className="text-sm text-center sm:text-left">
-            key names as strings for each color definition.
+           Dindoli,Surat ,Gujrat ,India 394210
           </p>
         </div>
         <div className="flex flex-col items-center w-full sm:items-start sm:w-1/6">
@@ -55,8 +55,8 @@ const Footer: React.FC = () => {
 
         <div className="flex flex-col items-center">
           <h1 className="text-2xl">Contact</h1>
-          <p className="text-sm">+91 7518034435</p>
-          <p className="text-sm">shailendraftp0001@gmail.com</p>
+          <p className="text-sm">+91 7518******</p>
+          <p className="text-sm">oxyencare@gmail.com</p>
         </div>
       </div>
     </div>
