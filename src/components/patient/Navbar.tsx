@@ -62,11 +62,11 @@ const Navbar: React.FC = () => {
         </Link>
       ))}
       {user && user.role !== Role.Patient ? (
-        <button className="w-1/2 bg-bgNormalButtonGreen p-2 font-semibold text-xs rounded-full text-white mr-2 md:w-auto uppercase">
+        <button className="w-1/2 bg-bgNormalButtonGreen p-2 font-semibold text-xs rounded-full text-white mr-2 pl-4 pr-4 md:w-auto uppercase">
           Role : {user?.role}
         </button>
       ) : (
-        <button className="w-1/2 bg-bgNormalButtonGreen p-2 font-semibold text-xs rounded-full text-white mr-2 md:w-auto ">
+        <button className="w-1/2 bg-bgNormalButtonGreen p-2 font-semibold text-xs rounded-full pl-4 pr-4 text-white mr-2 md:w-auto ">
           Appointment
         </button>
       )}

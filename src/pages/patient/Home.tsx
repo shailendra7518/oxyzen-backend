@@ -1,7 +1,19 @@
 import { patientImages } from "../../data/patient/images";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // 
+import { useEffect } from "react";
 const Home: React.FC = () => {
- 
+
+ useEffect(() => {
+   AOS.init({
+     duration: 1000,
+     offset: 100,
+     easing: "ease-in-out",
+     once: true,
+   });
+ }, []);
+
+
 const serviceData = [
   {
     icone: patientImages.home_icon_a,
@@ -37,7 +49,53 @@ const serviceData = [
 ];
 
 
+  const fourCardData = [
+    {
+      name: "Ritesh Ranjan",
+      image: patientImages.forCard_c,
+      specialist: "Dentist",
+    },
+    {
+      name: "Prateek Shukla",
+      image: patientImages.forCard_b,
+      specialist: "Cardiologist",
+    },
 
+    {
+      name: "Arushi Nagar",
+      image: patientImages.forCard_a,
+      specialist: "Orthopedics",
+    },
+    {
+      name: "Rajesh Mamindala",
+      image: patientImages.forCard_d,
+      specialist: "Gastrologist",
+    },
+  ];
+
+  const threeCardData = [
+    {
+      date: "September 20, 2023",
+      description:
+        "Dedicated and compassionate healthcare professional with a focus on providing personalized patient care and promoting overall well-being.",
+      title: "Compassionate Healthcare Provider",
+      image: patientImages.forCard_d,
+    },
+    {
+      date: "January 10, 2020",
+      description:
+        "Description: Experienced and empathetic physician committed to delivering high-quality medical services",
+      title: "Experienced and Empathetic Physician",
+      image: patientImages.doctor_h_card_image,
+    },
+    {
+      date: "March 18, 2021",
+      description:
+        "Description: Experienced and empathetic physician committed to delivering high-quality medical services",
+      title: "Skilled and Patient-Centered Doctor",
+      image: patientImages.doctor_hardik_card_image,
+    },
+  ];
 
   return (
     <>
@@ -68,7 +126,11 @@ const serviceData = [
             </button>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center md:items-end md:justify-end">
+        <div
+          className="flex flex-col justify-center items-center md:items-end md:justify-end"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <img
             className="w-full sm:max-w-xs md:max-w-full transition-transform duration-500 ease-in-out transform hover:scale-105"
             src={patientImages.home_happy_standing_doctor}
@@ -78,7 +140,11 @@ const serviceData = [
         </div>
       </div>
 
-      <div className="flex flex-col items-center w-screen justify-center  gap-9 h-96 sm:h-fit bg-bgFooterGreen sm:flex-row">
+      <div
+        className="flex flex-col items-center w-screen justify-center  gap-9 h-96 sm:h-fit bg-bgFooterGreen sm:flex-row"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="flex h-52 items-center gap-3 w-full sm:w-80">
           <div className="bg-white p-3 rounded-full">
             <img
@@ -155,24 +221,26 @@ const serviceData = [
             We Collaborate for Better Healthcare
           </h1>
           <p className="text-sm  text-gray-500">
-            I apologize for any confusion. It seems there was a
-            misunderstanding. The code I provided is the same as the one you
-            shared. It looks correct, and it should work as intended.
+            Fostering Collaborative Excellence in Healthcare: Our commitment
+            lies in fostering unity among healthcare professionals, innovating
+            patient-centric solutions, and ensuring a harmonious journey towards
+            optimal health.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-between gap-4">
             <div className="w-full sm:w-56">
               <h1 className="font-semibold">Our Vision</h1>
               <p className="text-sm  text-gray-500">
-                The code I provided is the same as the one you shared. It looks
-                correct, and it should work as intended.
+                To be a global leader in helthcare, recognized for excellence,
+                innovation, and positive impact.
               </p>
             </div>
             <div className="w-full sm:w-56">
               <h1 className="font-semibold">Our Mission</h1>
               <p className="text-sm  text-gray-500">
-                The code I provided is the same as the one you shared. It looks
-                correct, and it should work as intended.
+                Empower our stakeholders through services, driven by a
+                commitment to quality, sustainability, and continuous
+                improvement.
               </p>
             </div>
           </div>
@@ -194,23 +262,17 @@ const serviceData = [
         </h1>
 
         <div className="flex flex-wrap mt-6 gap-7 justify-center">
-          {serviceData.map((item,index) => (
+          {serviceData.map((item, index) => (
             <div
               key={index}
               className="bg-bgCardLightGreen p-8 flex flex-col justify-around w-[350px] transition-transform duration-300 ease-in-out transform hover:scale-105"
             >
               <div className="bg-white w-16 h-14 p-2 rounded-full flex items-center justify-center">
-                <img
-                  className="h-8"
-                  src={item.icone}
-                  alt="medicine-icon"
-                />
+                <img className="h-8" src={item.icone} alt="medicine-icon" />
               </div>
 
               <h1 className="font-semibold">{item.service}</h1>
-              <p className="text-sm text-gray-500">
-              {item.description}
-              </p>
+              <p className="text-sm text-gray-500">{item.description}</p>
               <p className="text-bgNormalButtonGreen mt-3 font-semibold text-xs cursor-pointer hover:underline ">
                 Learn More &rarr;
               </p>
@@ -230,9 +292,10 @@ const serviceData = [
             </h1>
             <h1 className="font-semibold text-xl">Healthcare at its Finest</h1>
             <p className="text-sm text-gray-100">
-              I apologize for any confusion. It seems there was a
-              misunderstanding. The code I provided is the same as the one you
-              shared. It looks correct, and it should work as intended.
+              Discover a realm of unparalleled healthcare excellence at our
+              facility, where our commitment to your well-being is unwavering.
+              Our working hours are designed to accommodate your health needs
+              seamlessly.
             </p>
 
             {[1, 2, 3, 4].map((item) => (
@@ -271,12 +334,13 @@ const serviceData = [
               Appointment
             </h1>
             <h1 className="text-2xl md:text-4xl">
-              Amazing Medical Facilities Just for You
+              Schedule Now: Secure Your Appointment
             </h1>
-            <p className="text-xs text-textNormalGray md:w-80">
-              I apologize for any confusion. It seems there was a
-              misunderstanding. The code I provided is the same as the one you
-              shared. It looks correct, and it should work as intended.
+            <p className="text-xs text-textNormalGray md:w-80 mt-2">
+              Fostering Collaborative Excellence in Healthcare: Our commitment
+              lies in fostering unity among healthcare professionals, innovating
+              patient-centric solutions, and ensuring a harmonious journey
+              towards optimal health.
             </p>
 
             <form className="flex flex-col w-full md:w-[350px] mt-2 gap-2">
@@ -355,7 +419,7 @@ const serviceData = [
                 />
               </div>
             </form>
-            <button className="bg-bgNormalButtonGreen p-2 pl-4 pr-4 text-sm rounded-full border-2 border-bgBorder text-white mt-2">
+            <button className="bg-bgNormalButtonGreen p-2 pl-4 pr-4 text-sm rounded-full border-2 border-bgBorder text-white mt-5 transition-transform duration-300 ease-in-out transform hover:scale-105">
               Make an Appointment
             </button>
           </div>
@@ -374,46 +438,39 @@ const serviceData = [
           Amazing Medical Facilities Just for You
         </h1>
 
-        <div className="flex flex-col md:flex-row gap-5 w-full overflow-x-auto justify-center">
-          {Array.from({ length: 4 }, (_, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 w-full  justify-center">
+          {fourCardData.map((doc, index) => (
             <div
               key={index}
-              className="flex flex-col items-center w-full md:w-auto"
+              className="flex flex-col items-center w-full transition-transform duration-300 hover:transform hover:scale-105  p-4"
             >
               <img
-                className="h-[300px] w-[250px] mb-3"
-                src={patientImages.home_card_doctor_image}
+                className="h-[270px] w-full mb-3 rounded-md transition-transform duration-300 hover:transform hover:scale-105"
+                src={doc.image}
                 alt=""
               />
-              <h1 className="mt-3">James Samuels</h1>
-              <p className="text-sm text-textNormalGray">Pediatrics</p>
+              <h1 className="mt-3">{doc.name}</h1>
+              <p className="text-sm text-textNormalGray">{doc.specialist}</p>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="flex bg-bgFooterGreen mt-6 justify-center w-screen mb-4 md:mb-0 h-auto md:h-[300px]">
+      <div className="flex bg-bgFooterGreen   mt-6 justify-center w-screen mb-4 md:mb-0 h-auto md:h-[300px]">
         <div className="p-6 md:w-[500px] flex flex-col justify-center items-center md:items-start">
-          <h1
-            className="text-lg uppercase font-rubik text-white"
-            style={{ letterSpacing: "3px" }}
-          >
-            Welcome to Oxyzen
-          </h1>
           <h1 className="text-2xl md:text-3xl text-white font-rubik w-full md:w-[400px] text-center md:text-left">
-            We Are Here to Hear and Heal Your Health Problems
+            The Most Intresting Hospitals In The India
           </h1>
 
           <p className="text-sm text-white w-full md:w-[320px] text-center md:text-left mt-4">
-            I apologize for any confusion. It seems there was a
-            misunderstanding. The code I provided is the same as the one you
-            shared.
+            A snapshot of the most fascinating hospitals in India, highlighting
+            their unique features, innovations, and contributions to healthcare.
           </p>
           <div className="mt-6 flex flex-col items-center md:flex-row gap-5">
-            <button className="bg-white text-sm text-black p-2 pl-4 pr-4 rounded-full">
+            <button className="border-bgBorder text-sm border-2 text-white p-2 pl-4 pr-4 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-bgFooterButton">
               Get Started
             </button>
-            <button className="border-bgBorder text-sm border-2 text-white p-2 pl-4 pr-4 rounded-full">
+            <button className="border-bgBorder text-sm border-2 text-white p-2 pl-4 pr-4 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-bgFooterButton">
               Contact Us
             </button>
           </div>
@@ -427,43 +484,29 @@ const serviceData = [
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row w-full overflow-x-auto justify-around h-[400px] pt-5">
-        
-
-       
-        {[0, 0, 0].map((_, index) => {
-          return (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-center h-[350px] w-full md:w-auto transition-transform duration-300 hover:transform hover:scale-105 hover:border-2 hover:border-bgNormalButtonGreen hover:transition-delay-150"
-            >
-              <img
-                className="h-[190px]  mb-3 rounded-md transition-transform duration-300 hover:transform hover:scale-105"
-                src={patientImages.single_doctor_left_image}
-                alt=""
-              />
-              <div className="p-3 flex flex-col">
-                <p
-                  className="text-xs text-textGreenFirst uppercase"
-                  style={{ letterSpacing: "1px" }}
-                >
-                  September 20, 2023
-                </p>
-                <h1 className="font-semibold text-sm mt-2">
-                  Can creatine supplements help people
-                </h1>
-                <p className="text-xs text-gray-400 mt-2">
-                  I apologize for any confusion. It seems there was a...
-                </p>
-              </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full  justify-center pt-5">
+        {threeCardData.map((doc, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center h-[350px] w-full transition-transform duration-300 hover:transform hover:scale-105 hover:transition-delay-150 p-10"
+          >
+            <img
+              className="h-[190px] mb-3 rounded-md transition-transform duration-300 hover:transform hover:scale-105"
+              src={doc.image}
+              alt=""
+            />
+            <div className="p-3 flex flex-col">
+              <p
+                className="text-xs text-textGreenFirst uppercase"
+                style={{ letterSpacing: "1px" }}
+              >
+                {doc.date}
+              </p>
+              <h1 className="font-semibold text-sm mt-2">{doc.title}</h1>
+              <p className="text-sm text-gray-400 mt-2">{doc.description}</p>
             </div>
-          );
-
-        })}
-
-        {/* Repeat similar structure for other cards */}
-
-        {/* Repeat similar structure for other cards */}
+          </div>
+        ))}
       </div>
     </>
   );

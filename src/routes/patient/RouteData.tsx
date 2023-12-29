@@ -8,6 +8,8 @@ import Profile from "../../pages/patient/Profile";
 import { PRIVATE, PUBLIC, Route } from "../../constant/routeTypes";
 import { Role } from "../../constant/role";
 import PageNotFound from "../../pages/patient/PageNotFound";
+import UnderConstructionPage from "../../pages/patient/PageUnderCunstruction";
+import AboutSection from "../../pages/patient/About";
 
 
 const RoutesData: Route[] = [
@@ -52,6 +54,30 @@ const RoutesData: Route[] = [
     element: <SingleDoctor />,
     role: Role.Patient,
     type: PRIVATE,
+  },
+  {
+    path: "/single-doctor",
+    element: <SingleDoctor />,
+    role: Role.Patient,
+    type: PRIVATE,
+  },
+  {
+    path: "/cities",
+    element: <UnderConstructionPage />,
+    role: Role.Patient,
+    type: PUBLIC,
+  },
+  {
+    path: "/categories",
+    element: <UnderConstructionPage />,
+    role: Role.Patient,
+    type: PUBLIC,
+  },
+  {
+    path: "/about",
+    element: <AboutSection />,
+    role: Role.Patient,
+    type: PUBLIC,
   },
   {
     path: "*",

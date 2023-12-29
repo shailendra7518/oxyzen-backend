@@ -1,6 +1,7 @@
 import React from "react";
 import { BiLike } from "react-icons/bi";
 import { TbPointFilled } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 export interface DoctorCardProps {
   image: string;
@@ -13,7 +14,7 @@ const DoctorCard: React.FC<DoctorCardProps> = (props) => {
   const { image, name, specialist, experience } = props;
 
   return (
-    <div className="shadow-lg flex flex-col rounded-md transition-transform duration-300 hover:transform hover:scale-105 hover:border-2 hover:border-bgNormalButtonGreen hover:transition-delay-150">
+    <div className="shadow-lg flex flex-col rounded-md transition-transform duration-300 hover:transform hover:scale-105  hover:transition-delay-150">
       <img
         className="h-48 object-cover rounded-t-md"
         src={image}
@@ -34,9 +35,9 @@ const DoctorCard: React.FC<DoctorCardProps> = (props) => {
               89 %
             </div>
           </button>
-          <button className="bg-bgNormalButtonGreen p-1 text-xs text-white rounded-lg">
+          <Link to={'/single-doctor'} className="bg-bgNormalButtonGreen p-1 text-xs text-white rounded-lg">
             Book Appointment
-          </button>
+          </Link>
         </div>
       </div>
     </div>

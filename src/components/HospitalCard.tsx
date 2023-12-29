@@ -13,7 +13,7 @@ const HospitalCard: React.FC<HospitalCardProps> = (props) => {
   const { hospital_image, hospital_name, hospital_specialist, minCost } = props;
 
   return (
-    <div className="shadow-lg flex flex-col rounded-md transition-transform duration-300 hover:transform hover:scale-105 hover:border-2 hover:border-bgNormalButtonGreen">
+    <div className="shadow-lg flex flex-col rounded-md transition-transform duration-300 hover:transform hover:scale-105 ">
       <img
         className="h-48 object-cover rounded-t-md"
         src={hospital_image}

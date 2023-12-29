@@ -33,6 +33,10 @@ import home_c from "../../assets/home/3.png";
 import home_d from "../../assets/home/4.png";
 import home_e from "../../assets/home/5.png";
 import home_f from "../../assets/home/5.png";
+import forCard_a from '../../assets/home/4-card/1.jpg';
+import forCard_b from "../../assets/home/4-card/7.jpg";
+import forCard_c from "../../assets/home/4-card/5.jpg";
+import forCard_d from "../../assets/home/4-card/6.png";
 
 
 
@@ -80,6 +84,13 @@ export const patientImages = {
   home_icon_c:home_c,
   home_icon_d:home_d,
   home_icon_e:home_e,
-  home_icon_f:home_f,
+  home_icon_f: home_f,
+
+  forCard_a,
+  forCard_b,
+  forCard_c,
+  forCard_d
+  
+  
         
 };

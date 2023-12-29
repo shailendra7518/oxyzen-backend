@@ -16,11 +16,11 @@ const StyledHeader = () => (
       <div className="text-lg font-bold text-gray-800">My Website</div>
 
       {/* Location input and search icon */}
-      <div className="flex items-center">
+      <div className="flex items-center justify-start">
         <input
           type="text"
           placeholder="Enter location"
-          className="py-2 px-4 border border-gray-300 rounded-l-md focus:outline-none focus:border-blue-500"
+          className=" border border-gray-300 rounded-l-md focus:outline-none focus:border-blue-500"
         />
         <button className="bg-blue-500 text-white py-2 px-4 rounded-r-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
           <svg

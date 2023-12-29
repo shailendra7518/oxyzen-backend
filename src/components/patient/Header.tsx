@@ -13,24 +13,24 @@ import { IoLocationOutline } from "react-icons/io5";
 
 // Add the styled header section code here
 export const StyledHeader = () => (
-  <header className="bg-white  p-4 relative z-10  pl-56 pr-40">
-    <div className="container mx-auto flex  items-center justify-center gap-4 border-2 border-gray-300 rounded-md ">
-      <div className="flex items-center flex-wrap">
-        <div className="flex items-center pl-2 w-[40vw]">
-          <CiSearch className="text-gray-500" />
+  <header className="bg-white  p-4 relative z-10  ">
+    <div className="container mx-auto flex  items-center justify-start pl-2 gap-4 border-2 border-gray-300 rounded-md  max-w-screen-md ">
+      <div className="flex items-center  flex-wrap pl-2">
+        <div className="flex items-center w-[45vw] max-w-[450px]">
+          <CiSearch className="text-gray-500 " />
           <input
             type="text"
             placeholder="Search"
-            className="py-2 px-4 outline-none border-gray-300 rounded-l-md "
+            className="py-2 px-4 outline-none border-gray-300 rounded-l-md w-full "
           />
         </div>
 
-        <div className="flex items-center pl-2  border-l-2 border-gray-300 w-[15vw]">
+        <div className="flex items-center border-l-0  sm:border-l-2  border-gray-300 w-[20vw] max-w-[250px] pl-2">
           <IoLocationOutline className="text-gray-500" />
           <input
             type="text"
             placeholder="Enter location"
-            className="py-2 px-4 outline-none border-gray-300 rounded-l-md  w-full"
+            className="py-2 px-4 outline-none border-gray-300 rounded-l-md w-full"
           />
         </div>
       </div>
