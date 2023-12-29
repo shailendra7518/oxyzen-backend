@@ -1,4 +1,3 @@
-import React from "react";
 import { patientImages } from "../../data/patient/images";
 
 const AboutSection = () => {
