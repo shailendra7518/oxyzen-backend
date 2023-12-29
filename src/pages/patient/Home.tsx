@@ -7,6 +7,14 @@ const Home: React.FC = () => {
   //     date: "September 20, 2023",
   //   },
   // ];
+
+  // const serviceData = [
+  //   {
+  //     icone: '',
+  //     service: '',
+  //     description:''
+  //   }
+  // ]
   return (
     <>
       <div className="flex flex-col w-screen bg-bgHomeGreenSecond justify-center md:flex-row">

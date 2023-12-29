@@ -8,8 +8,6 @@ export const commonImages = {
 	// images section
 	register_side_image: registerSideImage,
 	login_side_image: loginSideImage,
-
-
 	// logos section
 	company_logo: companyLogo,
 	footer_logo:footerLogo

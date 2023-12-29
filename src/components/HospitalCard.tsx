@@ -34,7 +34,7 @@ const HospitalCard: React.FC<HospitalCardProps> = (props) => {
 							89 %
 						</div>
 					</button>
-					<button className="bg-bgNormalButtonGreen p-1 text-xs text-white rounded-lg">
+					<button className="bg-bgNormalButtonGreen p-1 pl-3 pr-3 text-xs text-white rounded-lg">
 						Book Appointment
 					</button>
 				</div>
