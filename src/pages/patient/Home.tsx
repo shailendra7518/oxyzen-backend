@@ -1,20 +1,44 @@
 import { patientImages } from "../../data/patient/images";
 
 const Home: React.FC = () => {
-  // const demoDoctor = [
-  //   {
-  //     image: null,
-  //     date: "September 20, 2023",
-  //   },
-  // ];
+ 
+const serviceData = [
+  {
+    icone: patientImages.home_icon_a,
+    service: "Pharmacy Service",
+    description: "Get medicines at best price. more...",
+  },
+  {
+    icone: patientImages.home_icon_b,
+    service: "Medical Specialist",
+    description: "We have the best Specialist for you. more...",
+  },
+  {
+    icone: patientImages.home_icon_c,
+    service: "Medical Checkup",
+    description:
+      "geta medical check at the good price without standing on line.",
+  },
+  {
+    icone: patientImages.home_icon_d,
+    service: "Health Consultation",
+    description: "You can take health Consultation here.",
+  },
+  {
+    icone: patientImages.home_icon_e,
+    service: "Online appointment",
+    description: "book an appointment to meet with your doctors.",
+  },
+  {
+    icone: patientImages.home_icon_c,
+    service: "other facilities",
+    description: "Many mor.......",
+  },
+];
 
-  // const serviceData = [
-  //   {
-  //     icone: '',
-  //     service: '',
-  //     description:''
-  //   }
-  // ]
+
+
+
   return (
     <>
       <div className="flex flex-col w-screen bg-bgHomeGreenSecond justify-center md:flex-row">
@@ -170,26 +194,24 @@ const Home: React.FC = () => {
         </h1>
 
         <div className="flex flex-wrap mt-6 gap-7 justify-center">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
+          {serviceData.map((item,index) => (
             <div
-              key={item}
+              key={index}
               className="bg-bgCardLightGreen p-8 flex flex-col justify-around w-[350px] transition-transform duration-300 ease-in-out transform hover:scale-105"
             >
               <div className="bg-white w-16 h-14 p-2 rounded-full flex items-center justify-center">
                 <img
                   className="h-8"
-                  src={patientImages.home_medicine_icon}
+                  src={item.icone}
                   alt="medicine-icon"
                 />
               </div>
 
-              <h1 className="font-semibold">Service {item}</h1>
+              <h1 className="font-semibold">{item.service}</h1>
               <p className="text-sm text-gray-500">
-                I apologize for any confusion. It seems there was a
-                misunderstanding. The code I provided is the same as the one you
-                shared. It looks correct, and it should work as intended.
+              {item.description}
               </p>
-              <p className="text-bgNormalButtonGreen font-semibold text-xs hover:underline">
+              <p className="text-bgNormalButtonGreen mt-3 font-semibold text-xs cursor-pointer hover:underline ">
                 Learn More &rarr;
               </p>
             </div>
@@ -405,94 +427,39 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-5 w-full overflow-x-auto justify-center mt-5">
-        <div className="flex flex-col items-center w-full md:w-auto">
-          <img
-            className="h-[300px] w-[250px] "
-            src={patientImages.home_card_doctor_image}
-            alt=""
-          />
-          <div className="p-3 flex flex-col">
-            <p
-              className="text-xs text-textGreenFirst uppercase"
-              style={{ letterSpacing: "1px" }}
-            >
-              September 20, 2023
-            </p>
-            <h1 className="font-semibold text-sm mt-2">
-              Can creatine supplements help people
-            </h1>
-            <p className="text-xs text-gray-400 mt-2">
-              I apologize for any confusion. It seems there was a...
-            </p>
-          </div>
-        </div>
+      <div className="flex flex-col md:flex-row w-full overflow-x-auto justify-around h-[400px] pt-5">
+        
 
-        <div className="flex flex-col items-center w-full md:w-auto">
-          <img
-            className="h-[300px] w-[250px] mb-3"
-            src={patientImages.home_card_doctor_image}
-            alt=""
-          />
-          <div className="p-3 flex flex-col">
-            <p
-              className="text-xs text-textGreenFirst uppercase"
-              style={{ letterSpacing: "1px" }}
+       
+        {[0, 0, 0].map((_, index) => {
+          return (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center h-[350px] w-full md:w-auto transition-transform duration-300 hover:transform hover:scale-105 hover:border-2 hover:border-bgNormalButtonGreen hover:transition-delay-150"
             >
-              September 20, 2023
-            </p>
-            <h1 className="font-semibold text-sm mt-2">
-              Can creatine supplements help people
-            </h1>
-            <p className="text-xs text-gray-400 mt-2">
-              I apologize for any confusion. It seems there was a...
-            </p>
-          </div>
-        </div>
+              <img
+                className="h-[190px]  mb-3 rounded-md transition-transform duration-300 hover:transform hover:scale-105"
+                src={patientImages.single_doctor_left_image}
+                alt=""
+              />
+              <div className="p-3 flex flex-col">
+                <p
+                  className="text-xs text-textGreenFirst uppercase"
+                  style={{ letterSpacing: "1px" }}
+                >
+                  September 20, 2023
+                </p>
+                <h1 className="font-semibold text-sm mt-2">
+                  Can creatine supplements help people
+                </h1>
+                <p className="text-xs text-gray-400 mt-2">
+                  I apologize for any confusion. It seems there was a...
+                </p>
+              </div>
+            </div>
+          );
 
-        <div className="flex flex-col items-center w-full md:w-auto">
-          <img
-            className="h-[300px] w-[250px] mb-3"
-            src={patientImages.home_card_doctor_image}
-            alt=""
-          />
-          <div className="p-3 flex flex-col">
-            <p
-              className="text-xs text-textGreenFirst uppercase"
-              style={{ letterSpacing: "1px" }}
-            >
-              September 20, 2023
-            </p>
-            <h1 className="font-semibold text-sm mt-2">
-              Can creatine supplements help people
-            </h1>
-            <p className="text-xs text-gray-400 mt-2">
-              I apologize for any confusion. It seems there was a...
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-col items-center w-full md:w-auto">
-          <img
-            className="h-[300px] w-[250px] mb-3"
-            src={patientImages.home_card_doctor_image}
-            alt=""
-          />
-          <div className="p-3 flex flex-col">
-            <p
-              className="text-xs text-textGreenFirst uppercase"
-              style={{ letterSpacing: "1px" }}
-            >
-              September 20, 2023
-            </p>
-            <h1 className="font-semibold text-sm mt-2">
-              Can creatine supplements help people
-            </h1>
-            <p className="text-xs text-gray-400 mt-2">
-              I apologize for any confusion. It seems there was a...
-            </p>
-          </div>
-        </div>
+        })}
 
         {/* Repeat similar structure for other cards */}
 

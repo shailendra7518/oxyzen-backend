@@ -83,8 +83,8 @@ const hospitalData:HospitalCardProps[] = [
 		<>
 			<StyledHeader/>
       <div className="grid grid-cols-4 gap-6  p-16">
-        {hospitalData.map((hopital) => (
-          <HospitalCard {...hopital} />
+        {hospitalData.map((hopital,index) => (
+          <HospitalCard key={index} {...hopital} />
         ))}
       </div>
     </>

@@ -63,7 +63,7 @@ const Doctors: React.FC = () => {
     <>
       <StyledHeader />
 
-      <div className="grid grid-cols-4 gap-6 p-16">
+      <div className="grid grid-cols-4 gap-6  p-16">
         {doctorsData.map((doctor, index) => (
           <DoctorCard key={index} {...doctor} />
         ))}

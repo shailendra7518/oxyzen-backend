@@ -27,6 +27,13 @@ import hospital_f from "../../assets/hospital/6.png";
 import hospital_g from "../../assets/hospital/7.png";
 import hospital_h from "../../assets/hospital/8.png";
 
+import home_a from '../../assets/home/1.png';
+import home_b from '../../assets/home/2.png';
+import home_c from "../../assets/home/3.png";
+import home_d from "../../assets/home/4.png";
+import home_e from "../../assets/home/5.png";
+import home_f from "../../assets/home/5.png";
+
 
 
 export const patientImages = {
@@ -66,4 +73,13 @@ export const patientImages = {
   home_hospital_icon: hospitalIcon,
   home_call_icon: callIcon,
   home_medicine_icon: medicineIcon,
+
+  // home icon sections
+  home_icon_a: home_a,
+  home_icon_b: home_b,
+  home_icon_c:home_c,
+  home_icon_d:home_d,
+  home_icon_e:home_e,
+  home_icon_f:home_f,
+        
 };
